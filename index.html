@@ -3,17 +3,43 @@
 
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
 
-    <link rel="shortcut icon" href="images/favicon.ico">
+    <link href="images/favicon.ico" rel="shortcut icon">
 
     <title>Ideal Property</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css'>
+    <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+          integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+          referrerpolicy="no-referrer" rel="stylesheet"/>
+    <link href='https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css' rel='stylesheet'>
     <link href="styles/vendor.css" rel="stylesheet">
     <link href="styles/app.css" rel="stylesheet">
+
+    <style>
+        .swiper-button-next, .swiper-button-prev {
+            margin-top: -150px;
+        }
+
+        .custom-product-title {
+            font-size: 25px;
+        }
+
+        .custom-content {
+
+        }
+
+        .custom-area {
+            color: #5b5b5b;
+        }
+
+        .custom-price {
+            font-size: 20px;
+            font-weight: bold;
+            color: #d92343;
+        }
+    </style>
 </head>
 <body>
 
@@ -28,64 +54,71 @@
                 </div>
             </div>
 
-            <div class="col-lg-4 text-center"><a class="navbar-brand" href="index.html"><img class="etcodes-normal-logo"
+            <div class="col-lg-4 text-center"><a class="navbar-brand" href="index.html"><img alt="Logo"
+                                                                                             class="etcodes-normal-logo"
+                                                                                             height="50"
                                                                                              src="images/logo.png"
-                                                                                             width="200" height="50"
-                                                                                             alt="Logo"><img
-                    class="etcodes-mobile-logo" src="images/logo.png" width="200" height="50" alt="Logo"></a></div>
+                                                                                             width="200"><img
+                    alt="Logo" class="etcodes-mobile-logo" height="50" src="images/logo.png" width="200"></a></div>
             <div class="col-lg-4  d-lg-flex justify-content-end">
                 <ul class="secondary-navbar">
                     <li><a href="#">店舖電話</a></li>
-                    <li><a href="#"><i class="fa-solid fa-phone"></i>  29442266</a></li>
+                    <li><a href="#"><i class="fa-solid fa-phone"></i> 29442266</a></li>
                 </ul>
             </div>
         </div>
     </div>
     <nav class="navbar navbar-expand-lg navbar-light header-three">
-        <div class="container-fluid"><a class="navbar-brand" href="index.html"><img class="etcodes-normal-logo"
-                                                                                    src="images/logo.png" width="141"
-                                                                                    height="31" alt="Logo"><img
-                class="etcodes-mobile-logo" src="images/logo.png" width="141" height="31" alt="Logo"></a>
-            <button class="navbar-toggler hamburger-menu-btn" type="button" data-toggle="collapse"
-                    data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                    aria-label="Toggle navigation"><span>toggle menu</span></button>
+        <div class="container-fluid"><a class="navbar-brand" href="index.html"><img alt="Logo"
+                                                                                    class="etcodes-normal-logo"
+                                                                                    height="31"
+                                                                                    src="images/logo.png"
+                                                                                    width="141"><img
+                alt="Logo" class="etcodes-mobile-logo" height="31" src="images/logo.png" width="141"></a>
+            <button aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"
+                    class="navbar-toggler hamburger-menu-btn" data-target="#navbarNavDropdown" data-toggle="collapse"
+                    type="button"><span>toggle menu</span></button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav mx-auto">
-                    <li><a class="nav-link" id="navbarDropdownMenuLinkHome"
-                                                     href="#" data-toggle="dropdown" aria-haspopup="true"
-                                                     aria-expanded="false">主頁</a>
+                    <li><a aria-expanded="false" aria-haspopup="true"
+                           class="nav-link" data-toggle="dropdown" href="#"
+                           id="navbarDropdownMenuLinkHome">主頁</a>
                     </li>
-                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown"
-                                                     aria-haspopup="true" aria-expanded="false">理想村屋</a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkShop"><a class="dropdown-item"
-                                                                                                   href="#">關於我們</a><a class="dropdown-item" href="#">服務範疇</a></div>
+                    <li class="nav-item dropdown"><a aria-expanded="false" aria-haspopup="true"
+                                                     class="dropdown-toggle nav-link"
+                                                     data-toggle="dropdown" href="#">理想村屋</a>
+                        <div aria-labelledby="navbarDropdownMenuLinkShop" class="dropdown-menu"><a class="dropdown-item"
+                                                                                                   href="#">關於我們</a><a
+                                class="dropdown-item" href="#">服務範疇</a></div>
                     </li>
-                    <li class="nav-item dropdown mega_menu_holder"><a class="nav-link" href="#"
-                                                                      data-toggle="dropdown">村屋搜尋</a>
+                    <li class="nav-item dropdown mega_menu_holder"><a class="nav-link" data-toggle="dropdown"
+                                                                      href="#">村屋搜尋</a>
                     </li>
-                    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdownMenuLinkShop"
-                                                     href="#" data-toggle="dropdown" aria-haspopup="true"
-                                                     aria-expanded="false">鄉村介紹</a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkShop"><a class="dropdown-item"
-                                                                                                   href="#"> 推介打卡位 </a><a class="dropdown-item" href="#"> 休憩好去處 </a><a class="dropdown-item" href="#">特色飲食</a><a
+                    <li class="nav-item dropdown"><a aria-expanded="false" aria-haspopup="true"
+                                                     class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"
+                                                     id="navbarDropdownMenuLinkShop">鄉村介紹</a>
+                        <div aria-labelledby="navbarDropdownMenuLinkShop" class="dropdown-menu"><a class="dropdown-item"
+                                                                                                   href="#">
+                            推介打卡位 </a><a class="dropdown-item" href="#"> 休憩好去處 </a><a class="dropdown-item" href="#">特色飲食</a><a
                                 class="dropdown-item" href="#"> 交通配套</a></div>
                     </li>
-                    <li class="nav-item dropdown mega_menu_holder"><a class="nav-link" href="#"
-                                                                      data-toggle="dropdown">相關報導</a>
+                    <li class="nav-item dropdown mega_menu_holder"><a class="nav-link" data-toggle="dropdown"
+                                                                      href="#">相關報導</a>
                     </li>
-                    <li class="nav-item dropdown mega_menu_holder"><a class="nav-link" href="#"
-                                                                      data-toggle="dropdown">有用資料</a>
+                    <li class="nav-item dropdown mega_menu_holder"><a class="nav-link" data-toggle="dropdown"
+                                                                      href="#">有用資料</a>
                     </li>
-                    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdownMenuLinkShop"
-                                                     href="#" data-toggle="dropdown" aria-haspopup="true"
-                                                     aria-expanded="false">聯絡我們 </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkShop"><a class="dropdown-item"
-                                                                                                   href="#">田土廳成交</a><a class="dropdown-item" href="#">印花稅表(計算器)
-                            </a><a class="dropdown-item" href="#">銀行估價</a><a
+                    <li class="nav-item dropdown"><a aria-expanded="false" aria-haspopup="true"
+                                                     class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"
+                                                     id="navbarDropdownMenuLinkShop">聯絡我們 </a>
+                        <div aria-labelledby="navbarDropdownMenuLinkShop" class="dropdown-menu"><a class="dropdown-item"
+                                                                                                   href="#">田土廳成交</a><a
+                                class="dropdown-item" href="#">印花稅表(計算器)
+                        </a><a class="dropdown-item" href="#">銀行估價</a><a
                                 class="dropdown-item" href="#">按揭計算機</a></div>
                     </li>
-                    <li class="nav-item dropdown mega_menu_holder"><a class="nav-link" href="#"
-                                                                      data-toggle="dropdown">常見問題</a>
+                    <li class="nav-item dropdown mega_menu_holder"><a class="nav-link" data-toggle="dropdown"
+                                                                      href="#">常見問題</a>
                     </li>
 
                 </ul>
@@ -94,7 +127,6 @@
     </nav>
 
 </div>
-
 
 
 <div class="container mb-75px">
@@ -108,10 +140,121 @@
         <div class="container slider-column">
             <div class="swiper swiper-slider">
                 <div class="swiper-wrapper">
-                    <img class="swiper-slide" src="images/home-1/1.jpg" alt="Swiper">
-                    <img class="swiper-slide" src="images/home-1/2.jpg" alt="Swiper">
-                    <img class="swiper-slide" src="images/home-1/3.jpg" alt="Swiper">
-                    <img class="swiper-slide" src="images/home-1/4.jpg" alt="Swiper">
+                    <div class="swiper-slide">
+                        <div class="product">
+                            <div class="product-img-wrapper">
+                                <img alt="Product image" src="images/home-1/1.jpg"/>
+                            </div>
+                            <div class="product-content-wrapper">
+                                <h5 class="product-title custom-product-title"><a href="#">THE MASTERPIECE</a></h5>
+                                <p class="custom-content">
+                                    High Usable Area Nice Decoration With Furniture, E
+                                </p>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p class="custom-area">SA 1146sq.ft.</p>
+                                    </div>
+                                    <div class="col-6 text-right">
+                                        <p class="custom-price">Rent $34031</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="height: 5rem">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product">
+                            <div class="product-img-wrapper">
+                                <img alt="Product image" src="images/home-1/2.jpg"/>
+                            </div>
+                            <div class="product-content-wrapper">
+                                <h5 class="product-title custom-product-title"><a href="#">THE RIVERPARK</a></h5>
+                                <p class="custom-content">
+                                    屯馬上蓋 超值荀價3房！
+                                </p>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p class="custom-area">SA 722sq.ft.</p>
+                                    </div>
+                                    <div class="col-6 text-right">
+                                        <p class="custom-price">Rent $12.50M</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="height: 5rem">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product">
+                            <div class="product-img-wrapper">
+                                <img alt="Product image" src="images/home-1/3.jpg"/>
+                            </div>
+                            <div class="product-content-wrapper">
+                                <h5 class="product-title custom-product-title"><a href="#">GRANDWAY GARDEN</a></h5>
+                                <p class="custom-content">
+                                    #荀價2房 #鳳凰樓皇 #收租投資有保證!!
+                                </p>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p class="custom-area">SA 484sq.ft.</p>
+                                    </div>
+                                    <div class="col-6 text-right">
+                                        <p class="custom-price">Sale $7.58 M</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="height: 5rem">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product">
+                            <div class="product-img-wrapper">
+                                <img alt="Product image" src="images/home-1/4.jpg"/>
+                            </div>
+                            <div class="product-content-wrapper">
+                                <h5 class="product-title custom-product-title"><a href="#">FESTIVAL CITY PHASE 1</a></h5>
+                                <p class="custom-content">
+                                    全屋苑最平!! 激筍價!! 勿失良機!! 約睇實盤!!
+                                </p>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p class="custom-area">SA 679sq.ft.</p>
+                                    </div>
+                                    <div class="col-6 text-right">
+                                        <p class="custom-price">Rent $15464</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="height: 5rem">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product">
+                            <div class="product-img-wrapper">
+                                <img alt="Product image" src="images/home-1/3.jpg"/>
+                            </div>
+                            <div class="product-content-wrapper">
+                                <h5 class="product-title custom-product-title"><a href="#">CONVENTION PLAZA APARTMENTS</a></h5>
+                                <p class="custom-content">
+                                    high floor, unique layout, huge living and dining room, two ensuite
+                                </p>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p class="custom-area">2017/2601sq. ft.</p>
+                                    </div>
+                                    <div class="col-6 text-right">
+                                        <p class="custom-price">Rent $150K</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="height: 5rem">
+                        </div>
+                    </div>
                 </div>
                 <span class="swiper-pagination"></span>
                 <span class="swiper-button-prev"></span>
@@ -132,10 +275,121 @@
         <div class="container slider-column">
             <div class="swiper swiper-slider">
                 <div class="swiper-wrapper">
-                    <img class="swiper-slide" src="images/home-1/5.jpg" alt="Swiper">
-                    <img class="swiper-slide" src="images/home-1/6.jpg" alt="Swiper">
-                    <img class="swiper-slide" src="images/home-1/7.jpg" alt="Swiper">
-                    <img class="swiper-slide" src="images/home-1/8.jpg" alt="Swiper">
+                    <div class="swiper-slide">
+                        <div class="product">
+                            <div class="product-img-wrapper">
+                                <img alt="Product image" src="images/home-1/5.jpg"/>
+                            </div>
+                            <div class="product-content-wrapper">
+                                <h5 class="product-title custom-product-title"><a href="#">海雲軒</a></h5>
+                                <p class="custom-content">
+                                    罕有放盤~3房套
+                                </p>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p class="custom-area">SA 686sq.ft.</p>
+                                    </div>
+                                    <div class="col-6 text-right">
+                                        <p class="custom-price">Rent $12828</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="height: 5rem">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product">
+                            <div class="product-img-wrapper">
+                                <img alt="Product image" src="images/home-1/6.jpg"/>
+                            </div>
+                            <div class="product-content-wrapper">
+                                <h5 class="product-title custom-product-title"><a href="#">BAKER CIRCLE GREENWICH</a></h5>
+                                <p class="custom-content">
+                                    BAKER CIRCLE GREENWICH BAKER CIRCLE GREENWICH 20F
+                                </p>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p class="custom-area">SA ~264sq.ft.</p>
+                                    </div>
+                                    <div class="col-6 text-right">
+                                        <p class="custom-price">Sale $5.57 M</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="height: 5rem">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product">
+                            <div class="product-img-wrapper">
+                                <img alt="Product image" src="images/home-1/7.jpg"/>
+                            </div>
+                            <div class="product-content-wrapper">
+                                <h5 class="product-title custom-product-title"><a href="#">SEA CREST VILLA PHASE 4</a></h5>
+                                <p class="custom-content">
+                                    【利嘉閣真盤源】海景2房有KEY
+                                </p>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p class="custom-area">SA 470sq.ft.</p>
+                                    </div>
+                                    <div class="col-6 text-right">
+                                        <p class="custom-price">Sale $5.68 M</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="height: 5rem">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product">
+                            <div class="product-img-wrapper">
+                                <img alt="Product image" src="images/home-1/8.jpg"/>
+                            </div>
+                            <div class="product-content-wrapper">
+                                <h5 class="product-title custom-product-title"><a href="#">SEA CREST VILLA PHASE 1</a></h5>
+                                <p class="custom-content">
+                                    High Usable Area Simple Decoration
+                                </p>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p class="custom-area">SA 477sq.ft.</p>
+                                    </div>
+                                    <div class="col-6 text-right">
+                                        <p class="custom-price">Sale $5.30 M</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="height: 5rem">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product">
+                            <div class="product-img-wrapper">
+                                <img alt="Product image" src="images/product-image/5.png"/>
+                            </div>
+                            <div class="product-content-wrapper">
+                                <h5 class="product-title custom-product-title"><a href="#">CONVENTION PLAZA APARTMENTS</a></h5>
+                                <p class="custom-content">
+                                    high floor, unique layout, huge living and dining room, two ensuite
+                                </p>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p class="custom-area">2017/2601sq. ft.</p>
+                                    </div>
+                                    <div class="col-6 text-right">
+                                        <p class="custom-price">Rent $150K</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="height: 5rem">
+                        </div>
+                    </div>
                 </div>
                 <span class="swiper-pagination"></span>
                 <span class="swiper-button-prev"></span>
@@ -154,12 +408,123 @@
 
     <section class="section slider-section">
         <div class="container slider-column">
-            <div class="swiper swiper-slider">
+            <div class="swiper swiper-slider custom-product-slider">
                 <div class="swiper-wrapper">
-                    <img class="swiper-slide" src="images/home-1/9.jpg" alt="Swiper">
-                    <img class="swiper-slide" src="images/home-1/10.jpg" alt="Swiper">
-                    <img class="swiper-slide" src="images/home-1/11.jpg" alt="Swiper">
-                    <img class="swiper-slide" src="images/home-1/12.jpg" alt="Swiper">
+                    <div class="swiper-slide">
+                        <div class="product">
+                            <div class="product-img-wrapper">
+                                <img alt="Product image" src="images/product-image/1.png"/>
+                            </div>
+                            <div class="product-content-wrapper">
+                                <h5 class="product-title custom-product-title"><a href="#">Studio Plus</a></h5>
+                                <p class="custom-content">
+                                    [Landlord listing] Causeway Bay Pet-friendly Serviced Apartment
+                                </p>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p class="custom-area">GFA 268sq.ft.</p>
+                                    </div>
+                                    <div class="col-6 text-right">
+                                        <p class="custom-price">Rent $18000</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="height: 5rem">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product">
+                            <div class="product-img-wrapper">
+                                <img alt="Product image" src="images/product-image/2.png"/>
+                            </div>
+                            <div class="product-content-wrapper">
+                                <h5 class="product-title custom-product-title"><a href="#">METRO HARBOUR VIEW</a></h5>
+                                <p class="custom-content">
+                                    METRO HARBOUR VIEW Phase Ii - Tower 10
+                                </p>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p class="custom-area">412/595sq. ft.</p>
+                                    </div>
+                                    <div class="col-6 text-right">
+                                        <p class="custom-price">Rent $18800</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="height: 5rem">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product">
+                            <div class="product-img-wrapper">
+                                <img alt="Product image" src="images/product-image/3.png"/>
+                            </div>
+                            <div class="product-content-wrapper">
+                                <h5 class="product-title custom-product-title"><a href="#">FUJIYA MANSION</a></h5>
+                                <p class="custom-content">
+                                    Fujiya Mansion 21-23A Kennedy Road
+                                </p>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p class="custom-area">972/1300sq. ft.</p>
+                                    </div>
+                                    <div class="col-6 text-right">
+                                        <p class="custom-price">Rent $48000</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="height: 5rem">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product">
+                            <div class="product-img-wrapper">
+                                <img alt="Product image" src="images/product-image/4.png"/>
+                            </div>
+                            <div class="product-content-wrapper">
+                                <h5 class="product-title custom-product-title"><a href="#">RAMBLER OASIS HOTEL</a></h5>
+                                <p class="custom-content">
+                                    Rambler Garden Hotel- Limited Sea View Room $7,190up
+                                </p>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p class="custom-area">SA 136sq.ft.</p>
+                                    </div>
+                                    <div class="col-6 text-right">
+                                        <p class="custom-price">Rent $7190</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="height: 5rem">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product">
+                            <div class="product-img-wrapper">
+                                <img alt="Product image" src="images/product-image/5.png"/>
+                            </div>
+                            <div class="product-content-wrapper">
+                                <h5 class="product-title custom-product-title"><a href="#">CONVENTION PLAZA APARTMENTS</a></h5>
+                                <p class="custom-content">
+                                    high floor, unique layout, huge living and dining room, two ensuite
+                                </p>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p class="custom-area">2017/2601sq. ft.</p>
+                                    </div>
+                                    <div class="col-6 text-right">
+                                        <p class="custom-price">Rent $150K</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="height: 5rem">
+                        </div>
+                    </div>
                 </div>
                 <span class="swiper-pagination"></span>
                 <span class="swiper-button-prev"></span>
@@ -177,9 +542,10 @@
             <div class="col-lg-6 offset-lg-3">
                 <div class="contact-content text-center">
                     <div class="row d-lg-flex justify-content-center">
-                    <a href="#"><img src="images/f.png" alt="logo"></a>
+                        <a href="#"><img alt="logo" src="images/f.png"></a>
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Quis ipsum </p>
                     <div class="hr"></div>
                     <h6>1120 Lorem ipsum dolor sit amet, xx 00000, xxxxx.</h6>
                     <h6>29442266</h6>
@@ -211,8 +577,8 @@
 </footer>-->
 
 <script src='https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js'></script>
-<script type="text/javascript" src="scripts/vendor.js"></script>
-<script type="text/javascript" src="scripts/app.js"></script>
+<script src="scripts/vendor.js" type="text/javascript"></script>
+<script src="scripts/app.js" type="text/javascript"></script>
 <script>
     const swiper = new Swiper(".swiper-slider", {
         // Optional parameters
@@ -248,12 +614,12 @@
         // Responsive breakpoints
         breakpoints: {
             640: {
-                slidesPerView: 1.25,
+                slidesPerView: 2,
                 spaceBetween: 20
             },
             1024: {
-                slidesPerView: 2,
-                spaceBetween: 20
+                slidesPerView: 3,
+                spaceBetween: 40
             }
         }
     });
