@@ -14,7 +14,7 @@ $db_handle = new DBController();
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Job data - Ideal Property</title>
+    <title>Slider Data - Ideal Property</title>
 
     <?php require_once 'include/css.php'; ?>
 
@@ -39,12 +39,12 @@ $db_handle = new DBController();
             <div class="container-fluid">
 
                 <!-- Page Heading -->
-                <h1 class="h3 mb-2 text-gray-800">Job data Slot</h1>
+                <h1 class="h3 mb-2 text-gray-800">Apply Data</h1>
 
                 <!-- DataTales Example -->
                 <div class="card shadow mb-4">
                     <div class="card-header py-3">
-                        <h6 class="m-0 font-weight-bold text-primary">Job data Slot</h6>
+                        <h6 class="m-0 font-weight-bold text-primary">Apply Data</h6>
                     </div>
                     <div class="card-body">
                         <div class="table-responsive">
@@ -52,32 +52,30 @@ $db_handle = new DBController();
                                 <thead>
                                 <tr>
                                     <th>SL</th>
-                                    <th>Company name</th>
-                                    <th>Job title</th>
-                                    <th>Job description</th>
+                                    <th>First name</th>
+                                    <th>Last name</th>
+                                    <th>Email</th>
+                                    <th>Company</th>
+                                    <th>Job Title</th>
+                                    <th>Job Type</th>
                                     <th>Salary</th>
-                                    <th>Job type</th>
-                                    <th>Address</th>
-                                    <th>Contact</th>
-                                    <th>Keywords</th>
                                 </tr>
                                 </thead>
                                 <tfoot>
                                 <tr>
                                     <th>SL</th>
-                                    <th>Company name</th>
-                                    <th>Job title</th>
-                                    <th>Job description</th>
+                                    <th>First name</th>
+                                    <th>Last name</th>
+                                    <th>Email</th>
+                                    <th>Company</th>
+                                    <th>Job Title</th>
+                                    <th>Job Type</th>
                                     <th>Salary</th>
-                                    <th>Job type</th>
-                                    <th>Address</th>
-                                    <th>Contact</th>
-                                    <th>Keywords</th>
                                 </tr>
                                 </tfoot>
                                 <tbody>
                                 <?php
-                                $query="SELECT * FROM job_post as j, company as c WHERE c.id=j.company_id order by j.id DESC";
+                                $query = "SELECT * FROM slider order by id desc";
 
                                 $data = $db_handle->runQuery($query);
                                 $row_count = $db_handle->numRows($query);
@@ -86,14 +84,13 @@ $db_handle = new DBController();
                                     ?>
                                     <tr>
                                         <td><?php echo $i + 1; ?></td>
+                                        <td><?php echo $data[$i]["fname"]; ?></td>
+                                        <td><?php echo $data[$i]["surname"]; ?></td>
+                                        <td><?php echo $data[$i]["email"]; ?></td>
                                         <td><?php echo $data[$i]["name"]; ?></td>
                                         <td><?php echo $data[$i]["job_title"]; ?></td>
-                                        <td><?php echo $data[$i]["job_description"]; ?></td>
-                                        <td><?php echo $data[$i]["salary"]; ?></td>
                                         <td><?php echo $data[$i]["job_type"]; ?></td>
-                                        <td><?php echo $data[$i]["address"]; ?></td>
-                                        <td><?php echo $data[$i]["contact"]; ?></td>
-                                        <td><?php echo $data[$i]["keywords"]; ?></td>
+                                        <td>HK$ <?php echo $data[$i]["salary"]; ?></td>
                                     </tr>
                                 <?php } ?>
                                 </tbody>
@@ -144,7 +141,7 @@ $db_handle = new DBController();
 <?php require_once 'include/js.php'; ?>
 <script>
     // Call the dataTables jQuery plugin
-    $(document).ready(function() {
+    $(document).ready(function () {
         $('#timeTable').DataTable();
     });
 </script>

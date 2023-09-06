@@ -29,23 +29,16 @@
 
     <!-- Nav Item - Pages Collapse Menu -->
     <li class="nav-item">
-        <a class="nav-link" href="userdata.php">
+        <a class="nav-link" href="addslider.php">
             <i class="fas fa-fw fa-cog"></i>
-            <span>User Data</span>
+            <span>Add Slider</span>
         </a>
     </li>
     <!-- Nav Item - Pages Collapse Menu -->
     <li class="nav-item">
-        <a class="nav-link" href="jobdata.php">
+        <a class="nav-link" href="sliderdata.php">
             <i class="fas fa-fw fa-cog"></i>
-            <span>Job Data</span>
-        </a>
-    </li>
-    <!-- Nav Item - Pages Collapse Menu -->
-    <li class="nav-item">
-        <a class="nav-link" href="applydata.php">
-            <i class="fas fa-fw fa-cog"></i>
-            <span>Apply Data</span>
+            <span>Slider Data</span>
         </a>
     </li>
 
