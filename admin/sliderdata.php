@@ -39,12 +39,12 @@ $db_handle = new DBController();
             <div class="container-fluid">
 
                 <!-- Page Heading -->
-                <h1 class="h3 mb-2 text-gray-800">Apply Data</h1>
+                <h1 class="h3 mb-2 text-gray-800">Slider Data</h1>
 
                 <!-- DataTales Example -->
                 <div class="card shadow mb-4">
                     <div class="card-header py-3">
-                        <h6 class="m-0 font-weight-bold text-primary">Apply Data</h6>
+                        <h6 class="m-0 font-weight-bold text-primary">Slider Data</h6>
                     </div>
                     <div class="card-body">
                         <div class="table-responsive">
@@ -52,25 +52,25 @@ $db_handle = new DBController();
                                 <thead>
                                 <tr>
                                     <th>SL</th>
-                                    <th>First name</th>
-                                    <th>Last name</th>
-                                    <th>Email</th>
-                                    <th>Company</th>
-                                    <th>Job Title</th>
-                                    <th>Job Type</th>
-                                    <th>Salary</th>
+                                    <th>Title</th>
+                                    <th>Description</th>
+                                    <th>Area</th>
+                                    <th>Price</th>
+                                    <th>Image</th>
+                                    <th>Section</th>
+                                    <th>Action</th>
                                 </tr>
                                 </thead>
                                 <tfoot>
                                 <tr>
                                     <th>SL</th>
-                                    <th>First name</th>
-                                    <th>Last name</th>
-                                    <th>Email</th>
-                                    <th>Company</th>
-                                    <th>Job Title</th>
-                                    <th>Job Type</th>
-                                    <th>Salary</th>
+                                    <th>Title</th>
+                                    <th>Description</th>
+                                    <th>Area</th>
+                                    <th>Price</th>
+                                    <th>Image</th>
+                                    <th>Section</th>
+                                    <th>Action</th>
                                 </tr>
                                 </tfoot>
                                 <tbody>
@@ -84,13 +84,16 @@ $db_handle = new DBController();
                                     ?>
                                     <tr>
                                         <td><?php echo $i + 1; ?></td>
-                                        <td><?php echo $data[$i]["fname"]; ?></td>
-                                        <td><?php echo $data[$i]["surname"]; ?></td>
-                                        <td><?php echo $data[$i]["email"]; ?></td>
                                         <td><?php echo $data[$i]["name"]; ?></td>
-                                        <td><?php echo $data[$i]["job_title"]; ?></td>
-                                        <td><?php echo $data[$i]["job_type"]; ?></td>
-                                        <td>HK$ <?php echo $data[$i]["salary"]; ?></td>
+                                        <td><?php echo $data[$i]["description"]; ?></td>
+                                        <td><?php echo $data[$i]["area"]; ?></td>
+                                        <td><?php echo $data[$i]["price"]; ?></td>
+                                        <td><a href="../<?php echo $data[$i]["image"]; ?>" target="_blank">image</a></td>
+                                        <td><?php echo $data[$i]["section_name"]; ?></td>
+                                        <td>
+                                            <a href="sliderdata.php?slider_id=<?php echo $data[$i]["id"]; ?>" class="btn btn-info">Edit</a>
+                                            <a href="sliderdata.php?delete_slider_id=<?php echo $data[$i]["id"]; ?>" class="btn btn-danger">Delete</a>
+                                        </td>
                                     </tr>
                                 <?php } ?>
                                 </tbody>
