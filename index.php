@@ -58,7 +58,8 @@ $db_handle = new DBController();
                 <div class="navbar-modules d-none d-lg-flex justify-content-start">
                     <div class="navbar-module"><a href="#"><i class="fab fa-instagram"></i></a></div>
                     <div class="navbar-module"><a href="#"><i class="fab fa-youtube"></i></a></div>
-                    <div class="navbar-module"><a href="https://wa.me/69278453" target="_blank"><i class="fab fa-whatsapp"></i></a></div>
+                    <div class="navbar-module"><a href="https://wa.me/69278453" target="_blank"><i
+                                    class="fab fa-whatsapp"></i></a></div>
                 </div>
             </div>
 
@@ -67,7 +68,8 @@ $db_handle = new DBController();
                                                                                              height="50"
                                                                                              src="images/logo.png"
                                                                                              width="200"><img
-                    alt="Logo" class="etcodes-mobile-logo" height="50" src="images/logo.png" width="200"></a></div>
+                            alt="Logo" class="etcodes-mobile-logo" height="50" src="images/logo.png" width="200"></a>
+            </div>
             <div class="col-lg-4  d-lg-flex justify-content-end">
                 <ul class="secondary-navbar">
                     <li><a href="#">店舖電話</a></li>
@@ -82,7 +84,7 @@ $db_handle = new DBController();
                                                                                     height="31"
                                                                                     src="images/logo.png"
                                                                                     width="141"><img
-                alt="Logo" class="etcodes-mobile-logo" height="31" src="images/logo.png" width="141"></a>
+                        alt="Logo" class="etcodes-mobile-logo" height="31" src="images/logo.png" width="141"></a>
             <button aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"
                     class="navbar-toggler hamburger-menu-btn" data-target="#navbarNavDropdown" data-toggle="collapse"
                     type="button"><span>toggle menu</span></button>
@@ -97,33 +99,35 @@ $db_handle = new DBController();
                                                      data-toggle="dropdown" href="#">理想村屋</a>
                         <div aria-labelledby="navbarDropdownMenuLinkShop" class="dropdown-menu"><a class="dropdown-item"
                                                                                                    href="#">關於我們</a><a
-                                class="dropdown-item" href="#">服務範疇</a></div>
+                                    class="dropdown-item" href="#">服務範疇</a></div>
                     </li>
                     <li class="nav-item dropdown mega_menu_holder"><a class="nav-link" data-toggle="dropdown"
                                                                       href="#">村屋搜尋</a>
                     </li>
                     <li class="nav-item dropdown"><a aria-expanded="false" aria-haspopup="true"
                                                      class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"
-                                                    >鄉村介紹</a>
+                        >鄉村介紹</a>
                         <div aria-labelledby="navbarDropdownMenuLinkShop" class="dropdown-menu"><a class="dropdown-item"
                                                                                                    href="#">
-                            推介打卡位 </a><a class="dropdown-item" href="#"> 休憩好去處 </a><a class="dropdown-item" href="#">特色飲食</a><a
-                                class="dropdown-item" href="#"> 交通配套</a></div>
+                                推介打卡位 </a><a class="dropdown-item" href="#"> 休憩好去處 </a><a
+                                    class="dropdown-item" href="#">特色飲食</a><a
+                                    class="dropdown-item" href="#"> 交通配套</a></div>
                     </li>
                     <li class="nav-item dropdown mega_menu_holder"><a class="nav-link" data-toggle="dropdown"
                                                                       href="#">相關報導</a>
                     </li>
-                    <li class="nav-item dropdown mega_menu_holder"><a class="nav-link" data-toggle="dropdown"
-                                                                      href="#">有用資料</a>
-                    </li>
                     <li class="nav-item dropdown"><a aria-expanded="false" aria-haspopup="true"
-                                                     class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"
-                                                     id="navbarDropdownMenuLinkShop">聯絡我們 </a>
+                                                     class="nav-link dropdown-toggle" data-toggle="dropdown"
+                                                                      href="#">有用資料</a>
                         <div aria-labelledby="navbarDropdownMenuLinkShop" class="dropdown-menu"><a class="dropdown-item"
-                                                                                                   href="#">田土廳成交</a><a
-                                class="dropdown-item" href="#">印花稅表(計算器)
-                        </a><a class="dropdown-item" href="#">銀行估價</a><a
-                                class="dropdown-item" href="#">按揭計算機</a></div>
+                                                                                                   href="#" id="navbarDropdownMenuLinkShop">田土廳成交</a><a
+                                    class="dropdown-item" href="#">印花稅表(計算器)
+                            </a><a class="dropdown-item" href="#">銀行估價</a><a
+                                    class="dropdown-item" href="#">按揭計算機</a></div>
+                    </li>
+                    <li class="nav-item dropdown"><a class="nav-link" data-toggle="dropdown"
+                                                     href="#"
+                                                     >聯絡我們 </a>
                     </li>
                     <li class="nav-item dropdown mega_menu_holder"><a class="nav-link" data-toggle="dropdown"
                                                                       href="#">常見問題</a>
@@ -160,7 +164,8 @@ $db_handle = new DBController();
                                     <img alt="Product image" src="<?php echo $customer_data[$i]["image"]; ?>"/>
                                 </div>
                                 <div class="product-content-wrapper">
-                                    <h5 class="product-title custom-product-title"><a href="#"><?php echo $customer_data[$i]["name"]; ?></a></h5>
+                                    <h5 class="product-title custom-product-title"><a
+                                                href="#"><?php echo $customer_data[$i]["name"]; ?></a></h5>
                                     <p class="custom-content">
                                         <?php echo $customer_data[$i]["description"]; ?>
                                     </p>
@@ -213,7 +218,8 @@ $db_handle = new DBController();
                                     <img alt="Product image" src="<?php echo $customer_data[$i]["image"]; ?>"/>
                                 </div>
                                 <div class="product-content-wrapper">
-                                    <h5 class="product-title custom-product-title"><a href="#"><?php echo $customer_data[$i]["name"]; ?></a></h5>
+                                    <h5 class="product-title custom-product-title"><a
+                                                href="#"><?php echo $customer_data[$i]["name"]; ?></a></h5>
                                     <p class="custom-content">
                                         <?php echo $customer_data[$i]["description"]; ?>
                                     </p>
@@ -259,30 +265,31 @@ $db_handle = new DBController();
                     $row_count = $db_handle->numRows("SELECT * FROM slider where section_name='精選村屋推介' order by id desc");
 
                     for ($i = 0; $i < $row_count; $i++) {
-                    ?>
-                    <div class="swiper-slide">
-                        <div class="product">
-                            <div class="product-img-wrapper">
-                                <img alt="Product image" src="<?php echo $customer_data[$i]["image"]; ?>"/>
-                            </div>
-                            <div class="product-content-wrapper">
-                                <h5 class="product-title custom-product-title"><a href="#"><?php echo $customer_data[$i]["name"]; ?></a></h5>
-                                <p class="custom-content">
-                                    <?php echo $customer_data[$i]["description"]; ?>
-                                </p>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <p class="custom-area"><?php echo $customer_data[$i]["area"]; ?></p>
-                                    </div>
-                                    <div class="col-6 text-right">
-                                        <p class="custom-price"><?php echo $customer_data[$i]["price"]; ?></p>
+                        ?>
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img-wrapper">
+                                    <img alt="Product image" src="<?php echo $customer_data[$i]["image"]; ?>"/>
+                                </div>
+                                <div class="product-content-wrapper">
+                                    <h5 class="product-title custom-product-title"><a
+                                                href="#"><?php echo $customer_data[$i]["name"]; ?></a></h5>
+                                    <p class="custom-content">
+                                        <?php echo $customer_data[$i]["description"]; ?>
+                                    </p>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <p class="custom-area"><?php echo $customer_data[$i]["area"]; ?></p>
+                                        </div>
+                                        <div class="col-6 text-right">
+                                            <p class="custom-price"><?php echo $customer_data[$i]["price"]; ?></p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                            <div style="height: 5rem">
+                            </div>
                         </div>
-                        <div style="height: 5rem">
-                        </div>
-                    </div>
                         <?php
                     }
                     ?>
@@ -314,7 +321,8 @@ $db_handle = new DBController();
                         <ul>
                             <li><a class="hover-target" href=""><i class="fab fa-instagram"></i></a></li>
                             <li><a class="hover-target" href=""><i class="fab fa-youtube"></i></a></li>
-                            <li><a class="hover-target" href="https://wa.me/69278453" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+                            <li><a class="hover-target" href="https://wa.me/69278453" target="_blank"><i
+                                            class="fab fa-whatsapp"></i></a></li>
                         </ul>
                     </div>
                 </div>
