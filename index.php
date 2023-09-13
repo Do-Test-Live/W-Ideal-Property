@@ -351,7 +351,7 @@ $db_handle = new DBController();
 <script>
     const swiper = new Swiper(".swiper-slider", {
         // Optional parameters
-        centeredSlides: true,
+        centeredSlides: false,
         slidesPerView: 1,
         grabCursor: true,
         freeMode: false,
