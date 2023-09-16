@@ -12,7 +12,7 @@ $db_handle = new DBController();
 
     <link href="images/favicon.ico" rel="shortcut icon">
 
-    <title>Ideal Property - 關於我們</title>
+    <title>Ideal Property - 服務範疇</title>
 
     <?php include('include/css.php'); ?>
 
@@ -51,7 +51,7 @@ $db_handle = new DBController();
     <div class="container">
         <div class="row text-center">
             <div class="col-md-8 offset-md-2 text-center text-center all-text-content-white">
-                <h2 class="entry-title">關於我們</h2>
+                <h2 class="entry-title"></h2>
             </div>
         </div>
     </div>
@@ -59,6 +59,9 @@ $db_handle = new DBController();
 
 <div class="container mb-5">
     <div class="row">
+        <div class="col-md-9">
+            <h4 class="text-grey font-weight-bold" style="color: #f57103; font-size: 35px;">服務範疇</h4>
+        </div>
         <div class="col-12">
             <p>我們服務範疇包括: 村屋別墅租賃買賣, 農地土地倉地租賃買賣, 村屋規劃發展, 丁屋建築設計, 按揭貸款轉介, 投資策劃銷售等等。</p>
         </div>

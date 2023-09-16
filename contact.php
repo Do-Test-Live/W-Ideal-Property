@@ -49,7 +49,7 @@ $db_handle = new DBController();
 
 <div class="container mb-40px mt-60px">
     <div class="row large-gutters">
-        <div class="col-lg-6 mb-40px">
+        <div class="col-lg-6 col-12 mb-40px">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3687.58347547108!2d114.0241633759453!3d22.444697937644747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3403f0a041bab531%3A0xe9edfe5f86225acb!2s177%20Castle%20Peak%20Rd%20-%20Yuen%20Long%2C%20Yuen%20Long%2C%20Hong%20Kong!5e0!3m2!1sen!2sbd!4v1694862733428!5m2!1sen!2sbd"
                     width="560" height="650" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
