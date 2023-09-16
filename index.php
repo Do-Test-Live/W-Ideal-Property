@@ -12,14 +12,9 @@ $db_handle = new DBController();
 
     <link href="images/favicon.ico" rel="shortcut icon">
 
-    <title>Ideal Property</title>
+    <title>Ideal Property - 主頁</title>
 
-    <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-          integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-          referrerpolicy="no-referrer" rel="stylesheet"/>
-    <link href='https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css' rel='stylesheet'>
-    <link href="styles/vendor.css" rel="stylesheet">
-    <link href="styles/app.css" rel="stylesheet">
+    <?php include ('include/css.php');?>
 
     <style>
         .swiper-button-next, .swiper-button-prev {
@@ -46,99 +41,11 @@ $db_handle = new DBController();
     </style>
 </head>
 <body>
-<div class="whatsapp-button">
-    <a href="https://api.whatsapp.com/send?phone=69278453" target="_blank">
-        <img src="images/whatsapp.png" alt="WhatsApp">
-    </a>
-</div>
-<div class="header-three-container">
-    <div class="container-fluid header-three-top-bar py-55px px-60px">
-        <div class="row align-items-center">
-            <div class="col-lg-4">
-                <div class="navbar-modules d-none d-lg-flex justify-content-start">
-                    <div class="navbar-module"><a href="#"><i class="fab fa-instagram"></i></a></div>
-                    <div class="navbar-module"><a href="#"><i class="fab fa-youtube"></i></a></div>
-                    <div class="navbar-module"><a href="https://wa.me/69278453" target="_blank"><i
-                                    class="fab fa-whatsapp"></i></a></div>
-                </div>
-            </div>
 
-            <div class="col-lg-4 text-center"><a class="navbar-brand" href="index.html"><img alt="Logo"
-                                                                                             class="etcodes-normal-logo"
-                                                                                             height="50"
-                                                                                             src="images/logo.png"
-                                                                                             width="200"><img
-                            alt="Logo" class="etcodes-mobile-logo" height="50" src="images/logo.png" width="200"></a>
-            </div>
-            <div class="col-lg-4  d-lg-flex justify-content-end">
-                <ul class="secondary-navbar">
-                    <li><a href="#">店舖電話</a></li>
-                    <li><a href="#"><i class="fa-solid fa-phone"></i> 29442266</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <nav class="navbar navbar-expand-lg navbar-light header-three">
-        <div class="container-fluid"><a class="navbar-brand" href="index.html"><img alt="Logo"
-                                                                                    class="etcodes-normal-logo"
-                                                                                    height="31"
-                                                                                    src="images/logo.png"
-                                                                                    width="141"><img
-                        alt="Logo" class="etcodes-mobile-logo" height="31" src="images/logo.png" width="141"></a>
-            <button aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"
-                    class="navbar-toggler hamburger-menu-btn" data-target="#navbarNavDropdown" data-toggle="collapse"
-                    type="button"><span>toggle menu</span></button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav mx-auto">
-                    <li><a aria-expanded="false" aria-haspopup="true"
-                           class="nav-link" data-toggle="dropdown" href="#"
-                           id="navbarDropdownMenuLinkHome">主頁</a>
-                    </li>
-                    <li class="nav-item dropdown"><a aria-expanded="false" aria-haspopup="true"
-                                                     class="dropdown-toggle nav-link"
-                                                     data-toggle="dropdown" href="#">理想村屋</a>
-                        <div aria-labelledby="navbarDropdownMenuLinkShop" class="dropdown-menu"><a class="dropdown-item"
-                                                                                                   href="#">關於我們</a><a
-                                    class="dropdown-item" href="#">服務範疇</a></div>
-                    </li>
-                    <li class="nav-item dropdown mega_menu_holder"><a class="nav-link" data-toggle="dropdown"
-                                                                      href="#">村屋搜尋</a>
-                    </li>
-                    <li class="nav-item dropdown"><a aria-expanded="false" aria-haspopup="true"
-                                                     class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"
-                        >鄉村介紹</a>
-                        <div aria-labelledby="navbarDropdownMenuLinkShop" class="dropdown-menu"><a class="dropdown-item"
-                                                                                                   href="#">
-                                推介打卡位 </a><a class="dropdown-item" href="#"> 休憩好去處 </a><a
-                                    class="dropdown-item" href="#">特色飲食</a><a
-                                    class="dropdown-item" href="#"> 交通配套</a></div>
-                    </li>
-                    <li class="nav-item dropdown mega_menu_holder"><a class="nav-link" data-toggle="dropdown"
-                                                                      href="#">相關報導</a>
-                    </li>
-                    <li class="nav-item dropdown"><a aria-expanded="false" aria-haspopup="true"
-                                                     class="nav-link dropdown-toggle" data-toggle="dropdown"
-                                                                      href="#">有用資料</a>
-                        <div aria-labelledby="navbarDropdownMenuLinkShop" class="dropdown-menu"><a class="dropdown-item"
-                                                                                                   href="#" id="navbarDropdownMenuLinkShop">田土廳成交</a><a
-                                    class="dropdown-item" href="#">印花稅表(計算器)
-                            </a><a class="dropdown-item" href="#">銀行估價</a><a
-                                    class="dropdown-item" href="#">按揭計算機</a></div>
-                    </li>
-                    <li class="nav-item dropdown"><a class="nav-link" data-toggle="dropdown"
-                                                     href="#"
-                                                     >聯絡我們 </a>
-                    </li>
-                    <li class="nav-item dropdown mega_menu_holder"><a class="nav-link" data-toggle="dropdown"
-                                                                      href="#">常見問題</a>
-                    </li>
+<?php include ('include/whatsapp_button.php');?>
 
-                </ul>
-            </div>
-        </div>
-    </nav>
 
-</div>
+<?php include ('include/menu.php');?>
 
 
 <div class="container mb-75px">
@@ -304,50 +211,12 @@ $db_handle = new DBController();
 </div>
 
 
-<section class="contact-area" id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 offset-lg-3">
-                <div class="contact-content text-center">
-                    <div class="row d-lg-flex justify-content-center">
-                        <a href="#"><img alt="logo" src="images/f.png"></a>
-                    </div>
-                    <p>讓你體驗一個不一樣的村屋代理 </br>
-                        讓你輕輕鬆鬆掌握村屋置業機會 </p>
-                    <div class="hr"></div>
-                    <h6>香港新界元朗青山公路元朗段177號 3樓</h6>
-                    <h6>29442266</h6>
-                    <div class="contact-social">
-                        <ul>
-                            <li><a class="hover-target" href=""><i class="fab fa-instagram"></i></a></li>
-                            <li><a class="hover-target" href=""><i class="fab fa-youtube"></i></a></li>
-                            <li><a class="hover-target" href="https://wa.me/69278453" target="_blank"><i
-                                            class="fab fa-whatsapp"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+<?php include ('include/footer.php');?>
 
-<!--<footer class="web-footer footer">
-    <div class="web-footer footer py-45px primary-bg-color">
-        <div class="container">
-            <div class="row large-gutters">
-                <div class="col-md-12 text-center">
-                    <div class="footer-widget">
-                        <p class="m-md-0">© 2023 Ideal Property powered by <span> <a href="https://ngt.hk"> NGT </a></span> tech</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>-->
 
-<script src='https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js'></script>
-<script src="scripts/vendor.js" type="text/javascript"></script>
-<script src="scripts/app.js" type="text/javascript"></script>
+<?php include ('include/js.php');?>
+
+
 <script>
     const swiper = new Swiper(".swiper-slider", {
         // Optional parameters
