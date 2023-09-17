@@ -56,5 +56,12 @@
         </a>
     </li>
 
+    <li class="nav-item">
+        <a class="nav-link" href="contact_data.php">
+            <i class="fas fa-fw fa-file-contract"></i>
+            <span>Contact Data</span>
+        </a>
+    </li>
+
 </ul>
 <!-- End of Sidebar -->

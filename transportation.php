@@ -60,154 +60,29 @@ $db_handle = new DBController();
 <div class="container">
 
     <div class="row blog-post">
-        <div class="col-md-4 col-lg-4">
-            <article>
-                <div class="entry-media"><img src="images/home-3/1.jpg" alt="Entry Image"/>
-                </div>
-                <div class="entry-content-wrapper">
-                    <div class="entry-meta-top"><span class="entry-meta-category"><a href="#">Photography</a></span><span
-                            class="post-meta-date">NOV 11, 2020</span></div>
-                    <h5 class="entry-title"><a href="#">Aenean mattis tortor ac sapien congue
-                            molestie</a></h5>
-                    <div class="entry-content">
-                        <p>Quisque sollicitudin lacinia sapien, eu tincidunt nun accumsan nec laoreet. Curabitur feugiat
-                            posuere odio.</p>
+        <?php
+        $fetch_blog = $db_handle->runQuery("select * from blog where category_id = '6'");
+        $no_fetch_blog = $db_handle->numRows("select * from blog where category_id = '6'");
+        for($i=0; $i<$no_fetch_blog; $i++){
+            ?>
+            <div class="col-md-4 col-lg-4">
+                <article>
+                    <div class="entry-media"><img src="<?php echo $fetch_blog[$i]['image'];?>" alt="Entry Image"/>
                     </div>
-                </div>
-            </article>
-        </div>
-        <div class="col-md-4 col-lg-4">
-            <article>
-                <div class="entry-media"><img src="images/home-3/2.jpg" alt="Entry Image"/>
-                </div>
-                <div class="entry-content-wrapper">
-                    <div class="entry-meta-top"><span class="entry-meta-category"><a
-                                href="#">Humour</a></span><span class="post-meta-date">NOV 11, 2020</span>
+                    <div class="entry-content-wrapper">
+                        <h5 class="entry-title"><a href="blog_details.php?id=<?php echo $fetch_blog[$i]['id'];?>"><?php echo $fetch_blog[$i]['title'];?></a></h5>
+                        <div class="entry-content">
+                            <p><?php $description = $fetch_blog[$i]['description'];
+                                $shortDescription = substr($description, 0, 150) . '...';
+                                echo $shortDescription;
+                                ?></p>
+                        </div>
                     </div>
-                    <h5 class="entry-title"><a href="#">Etiam commodo eros non erat tristique
-                            congue</a></h5>
-                    <div class="entry-content">
-                        <p>Quisque sollicitudin lacinia sapien, eu tincidunt nun accumsan nec laoreet. Curabitur feugiat
-                            posuere odio.</p>
-                    </div>
-                </div>
-            </article>
-        </div>
-        <div class="col-md-4 col-lg-4">
-            <article>
-                <div class="entry-media"><img src="images/home-3/3.jpg" alt="Entry Image"/>
-                </div>
-                <div class="entry-content-wrapper">
-                    <div class="entry-meta-top"><span class="entry-meta-category"><a href="#">Photography</a></span><span
-                            class="post-meta-date">NOV 11, 2020</span></div>
-                    <h5 class="entry-title"><a href="#">Suspendisse viverra massa eget nibh
-                            ultricies mollis</a></h5>
-                    <div class="entry-content">
-                        <p>Quisque sollicitudin lacinia sapien, eu tincidunt nun accumsan nec laoreet. Curabitur feugiat
-                            posuere odio.</p>
-                    </div>
-                </div>
-            </article>
-        </div>
-        <div class="col-md-4 col-lg-4">
-            <article>
-                <div class="entry-media"><img src="images/home-3/4.jpg" alt="Entry Image"/>
-                </div>
-                <div class="entry-content-wrapper">
-                    <div class="entry-meta-top"><span class="entry-meta-category"><a
-                                href="#">Humour</a></span><span class="post-meta-date">NOV 11, 2020</span>
-                    </div>
-                    <h5 class="entry-title"><a href="#">Curabitur pretium lectusnc ine fermentum
-                            fermen</a></h5>
-                    <div class="entry-content">
-                        <p>Quisque sollicitudin lacinia sapien, eu tincidunt nun accumsan nec laoreet. Curabitur feugiat
-                            posuere odio.</p>
-                    </div>
-                </div>
-            </article>
-        </div>
-        <div class="col-md-4 col-lg-4">
-            <article>
-                <div class="entry-media"><img src="images/home-3/5.jpg" alt="Entry Image"/>
-                </div>
-                <div class="entry-content-wrapper">
-                    <div class="entry-meta-top"><span class="entry-meta-category"><a href="#">Photography</a></span><span
-                            class="post-meta-date">NOV 11, 2020</span></div>
-                    <h5 class="entry-title"><a href="#">Suspendisse viverra massa eget nibh
-                            ultricies mollis</a></h5>
-                    <div class="entry-content">
-                        <p>Quisque sollicitudin lacinia sapien, eu tincidunt nun accumsan nec laoreet. Curabitur feugiat
-                            posuere odio.</p>
-                    </div>
-                </div>
-            </article>
-        </div>
-        <div class="col-md-4 col-lg-4">
-            <article>
-                <div class="entry-media"><img src="images/home-3/6.jpg" alt="Entry Image"/>
-                </div>
-                <div class="entry-content-wrapper">
-                    <div class="entry-meta-top"><span class="entry-meta-category"><a
-                                href="#">Humour</a></span><span class="post-meta-date">NOV 11, 2020</span>
-                    </div>
-                    <h5 class="entry-title"><a href="#">Etiam commodo eros non erat tristique
-                            congue</a></h5>
-                    <div class="entry-content">
-                        <p>Quisque sollicitudin lacinia sapien, eu tincidunt nun accumsan nec laoreet. Curabitur feugiat
-                            posuere odio.</p>
-                    </div>
-                </div>
-            </article>
-        </div>
-        <div class="col-md-4 col-lg-4">
-            <article>
-                <div class="entry-media"><img src="images/home-3/7.jpg" alt="Entry Image"/>
-                </div>
-                <div class="entry-content-wrapper">
-                    <div class="entry-meta-top"><span class="entry-meta-category"><a href="#">Photography</a></span><span
-                            class="post-meta-date">NOV 11, 2020</span></div>
-                    <h5 class="entry-title"><a href="#">Pellentesque ipsum magna neu ultrices vitae
-                            rutrum</a></h5>
-                    <div class="entry-content">
-                        <p>Quisque sollicitudin lacinia sapien, eu tincidunt nun accumsan nec laoreet. Curabitur feugiat
-                            posuere odio.</p>
-                    </div>
-                </div>
-            </article>
-        </div>
-        <div class="col-md-4 col-lg-4">
-            <article>
-                <div class="entry-media"><img src="images/home-3/8.jpg" alt="Entry Image"/>
-                </div>
-                <div class="entry-content-wrapper">
-                    <div class="entry-meta-top"><span class="entry-meta-category"><a href="#">Photography</a></span><span
-                            class="post-meta-date">NOV 11, 2020</span></div>
-                    <h5 class="entry-title"><a href="#">Aenean mattis tortor ac sapien congue
-                            molestie.</a></h5>
-                    <div class="entry-content">
-                        <p>Quisque sollicitudin lacinia sapien, eu tincidunt nun accumsan nec laoreet. Curabitur feugiat
-                            posuere odio.</p>
-                    </div>
-                </div>
-            </article>
-        </div>
-        <div class="col-md-4 col-lg-4">
-            <article>
-                <div class="entry-media"><img src="images/home-3/9.jpg" alt="Entry Image"/>
-                </div>
-                <div class="entry-content-wrapper">
-                    <div class="entry-meta-top"><span class="entry-meta-category"><a
-                                href="#">Humour</a></span><span class="post-meta-date">NOV 11, 2020</span>
-                    </div>
-                    <h5 class="entry-title"><a href="#">Suspendisse viverra massa eget nibh
-                            ultricies mollis</a></h5>
-                    <div class="entry-content">
-                        <p>Quisque sollicitudin lacinia sapien, eu tincidunt nun accumsan nec laoreet. Curabitur feugiat
-                            posuere odio.</p>
-                    </div>
-                </div>
-            </article>
-        </div>
+                </article>
+            </div>
+            <?php
+        }
+        ?>
     </div>
 </div>
 

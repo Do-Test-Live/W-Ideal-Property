@@ -1,6 +1,9 @@
 <?php
 require_once("include/dbController.php");
 $db_handle = new DBController();
+
+$id = $_GET['id'];
+$fetch_blog_detail = $db_handle->runQuery("select * from blog where id = '$id'");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,7 +15,7 @@ $db_handle = new DBController();
 
     <link href="images/favicon.ico" rel="shortcut icon">
 
-    <title>Ideal Property - 相關報導</title>
+    <title>Ideal Property - 關於我們</title>
 
     <?php include('include/css.php'); ?>
 
@@ -47,42 +50,29 @@ $db_handle = new DBController();
 
 <?php include('include/menu.php'); ?>
 
-<div class="page-main-title-2 mt-60px mb-60px mx-20px mx-lg-60px bg-img-1">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 offset-md-2 text-center text-center all-text-content-white">
-                <h2 class="entry-title">相關報導</h2>
-            </div>
+<div class="container-fluid px-20px px-md-60px mt-60px mb-lg-35px">
+    <div class="row align-items-center">
+        <div class="col-lg-6">
+            <div class="entry-media"><img src="<?php echo $fetch_blog_detail[0]['image'];?>" alt="Card image cap"></div>
+        </div>
+        <div class="col-lg-6 pt-40px pb-lg-30px">
+            <h1 class="single-post-entry-title entry-title"><?php echo $fetch_blog_detail[0]['title'];?></h1>
         </div>
     </div>
 </div>
-
 <div class="container">
-
-    <div class="row blog-post">
-        <?php
-        $fetch_blog = $db_handle->runQuery("select * from blog where category_id = '7'");
-        $no_fetch_blog = $db_handle->numRows("select * from blog where category_id = '7'");
-        for($i=0; $i<$no_fetch_blog; $i++){
-            ?>
-            <div class="col-md-4 col-lg-4">
+    <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+            <div class="blog-post single-post">
                 <article>
-                    <div class="entry-media"><img src="<?php echo $fetch_blog[$i]['image'];?>" alt="Entry Image"/>
-                    </div>
                     <div class="entry-content-wrapper">
-                        <h5 class="entry-title"><a href="blog_details.php?id=<?php echo $fetch_blog[$i]['id'];?>"><?php echo $fetch_blog[$i]['title'];?></a></h5>
                         <div class="entry-content">
-                            <p><?php $description = $fetch_blog[$i]['description'];
-                                $shortDescription = substr($description, 0, 150) . '...';
-                                echo $shortDescription;
-                                ?></p>
+                            <p><?php echo $fetch_blog_detail[0]['description'];?></p>
                         </div>
                     </div>
                 </article>
             </div>
-            <?php
-        }
-        ?>
+        </div>
     </div>
 </div>
 

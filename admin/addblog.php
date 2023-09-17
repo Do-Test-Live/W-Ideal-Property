@@ -102,7 +102,7 @@ if (isset($_POST['insert'])) {
                                 <textarea class="form-control" name="description" required rows="4"></textarea>
                             </div>
                             <div class="mb-3">
-                                <label>Image</label>
+                                <label>Image (1200*800)</label>
                                 <div class="custom-file">
                                     <input type="file" class="custom-file-input" name="image" id="image" required>
                                     <label class="custom-file-label" for="image">Choose file</label>

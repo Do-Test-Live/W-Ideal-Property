@@ -1,6 +1,22 @@
 <?php
 require_once("include/dbController.php");
 $db_handle = new DBController();
+
+if(isset($_POST['contact_submit'])){
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
+
+    $query = $db_handle->insertQuery("INSERT INTO `contact_data` (`name`, `email`, `comment`) VALUES ('$name','$email','$message')");
+    if($query){
+        echo "
+        <script>
+        alert ('Your Request is Submitted.');
+        window.location.href = 'contact.php';
+</script>
+        ";
+    }
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -59,8 +75,7 @@ $db_handle = new DBController();
             <p>地址: 香港新界元朗青山公路元朗段177號 3樓</p>
             <p>電話: 3425 4563</p>
             <p>電郵: info@idealproperty.hk</p>
-            <form id="contact-form" method="post" action="https://energeticthemes.com/templates/dabba/php/contact.php"
-                  class="mt-3">
+            <form method="post" action="#" class="mt-3">
                 <div class="row mb-0">
                     <div class="col-sm-6 col-xs-12">
                         <div class="form-group mb-30px">
@@ -89,7 +104,7 @@ $db_handle = new DBController();
                 <div class="row">
                     <div class="col-sm-12 col-xs-12 align-left">
                         <button class="btn btn-shadow disabled" type="submit"
-                                style="pointer-events: all; cursor: pointer;">Submit
+                                style="pointer-events: all; cursor: pointer;" name="contact_submit">Submit
                         </button>
                     </div>
                 </div>

@@ -72,7 +72,7 @@ $db_handle = new DBController();
                                 </div>
                                 <div class="product-content-wrapper">
                                     <h5 class="product-title custom-product-title"><a
-                                                href="#"><?php echo $customer_data[$i]["name"]; ?></a></h5>
+                                                href="details.php?id=<?php echo $customer_data[$i]['id'];?>"><?php echo $customer_data[$i]["name"]; ?></a></h5>
                                     <p class="custom-content">
                                         <?php echo $customer_data[$i]["description"]; ?>
                                     </p>
@@ -126,7 +126,7 @@ $db_handle = new DBController();
                                 </div>
                                 <div class="product-content-wrapper">
                                     <h5 class="product-title custom-product-title"><a
-                                                href="#"><?php echo $customer_data[$i]["name"]; ?></a></h5>
+                                                href="details.php?id=<?php echo $customer_data[$i]['id'];?>"><?php echo $customer_data[$i]["name"]; ?></a></h5>
                                     <p class="custom-content">
                                         <?php echo $customer_data[$i]["description"]; ?>
                                     </p>
@@ -180,7 +180,7 @@ $db_handle = new DBController();
                                 </div>
                                 <div class="product-content-wrapper">
                                     <h5 class="product-title custom-product-title"><a
-                                                href="#"><?php echo $customer_data[$i]["name"]; ?></a></h5>
+                                                href="details.php?id=<?php echo $customer_data[$i]['id'];?>"><?php echo $customer_data[$i]["name"]; ?></a></h5>
                                     <p class="custom-content">
                                         <?php echo $customer_data[$i]["description"]; ?>
                                     </p>
