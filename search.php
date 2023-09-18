@@ -1,6 +1,14 @@
 <?php
 require_once("include/dbController.php");
 $db_handle = new DBController();
+$s = 0;
+if(isset($_POST['search'])){
+    $key = $db_handle->checkValue($_POST['key']);
+    $search_result = $db_handle->runQuery("SELECT * FROM `slider` WHERE name LIKE '%$key%'");
+    if($search_result){
+        $s = 1;
+    }
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -63,9 +71,9 @@ $db_handle = new DBController();
             <div class="widget">
                 <form class="search-form" action="#" method="post">
                     <div class="input-group">
-                        <input class="form-control" type="text" placeholder="Search" name="q">
+                        <input class="form-control" type="text" placeholder="Search" name="key" required>
                         <div class="input-group-append">
-                            <button class="btn" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                            <button class="btn" type="submit" name="search"><i class="fa fa-search" aria-hidden="true"></i></button>
                         </div>
                     </div>
                 </form>
@@ -73,6 +81,39 @@ $db_handle = new DBController();
         </div>
     </div>
 </div>
+
+<?php
+if($s == 1){
+    ?>
+    <div class="container">
+        <div class="row blog-post">
+            <?php
+            $no_search_result = $db_handle->numRows("SELECT * FROM `slider` WHERE name LIKE '%$key%'");
+            for($i=0; $i<$no_search_result; $i++){
+                ?>
+                <div class="col-md-4 col-lg-4">
+                    <article>
+                        <div class="entry-media"><img src="<?php echo $search_result[$i]['image'];?>" alt="Entry Image"/>
+                        </div>
+                        <div class="entry-content-wrapper">
+                            <h5 class="entry-title"><a href="details.php?id=<?php echo $search_result[$i]['id'];?>"><?php echo $search_result[$i]['name'];?></a></h5>
+                            <div class="entry-content">
+                                <p><?php $description = $search_result[$i]['description'];
+                                    $shortDescription = substr($description, 0, 150) . '...';
+                                    echo $shortDescription;
+                                    ?></p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <?php
+            }
+            ?>
+        </div>
+    </div>
+    <?php
+}
+?>
 
 
 <?php include('include/footer.php'); ?>
