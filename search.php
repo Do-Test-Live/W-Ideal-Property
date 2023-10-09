@@ -102,7 +102,7 @@ if (isset($_POST['search'])) {
                             </select>
                         </div>
                         <div class="col-lg-5 mb-3">
-                            <input class="form-control" type="text" alt="" name="keyword" placeholder="關鍵字" required>
+                            <input class="form-control" type="text" alt="" name="key" placeholder="關鍵字" required>
                         </div>
                         <div class="col-lg-2 mb-3">
                             <div class="input-group-append">
