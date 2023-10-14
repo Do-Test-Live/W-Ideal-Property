@@ -75,8 +75,7 @@
                                             href="contact.php"
                         >聯絡我們 </a>
                     </li>
-                    <li class="nav-item dropdown mega_menu_holder"><a class="nav-link" data-toggle="dropdown"
-                                                                      href="#">常見問題</a>
+                    <li class="nav-item"><a class="nav-link" href="faq.php">常見問題</a>
                     </li>
 
                 </ul>
