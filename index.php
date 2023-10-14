@@ -74,12 +74,16 @@ $db_handle = new DBController();
                                     <h5 class="product-title custom-product-title"><a
                                                 href="details.php?id=<?php echo $customer_data[$i]['id'];?>"><?php echo $customer_data[$i]["name"]; ?></a></h5>
                                     <p class="custom-content">
-                                        <?php
-                                        $description = $customer_data[$i]["description"];
-                                        $limited_description = (strlen($description) > 300) ? substr($description, 0, 300) . '...' : $description;
-                                        echo $limited_description;
-                                        ?>
+                                        <?php echo $customer_data[$i]["description"]; ?>
                                     </p>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <p class="custom-area"><?php echo $customer_data[$i]["area"]; ?></p>
+                                        </div>
+                                        <div class="col-6 text-right">
+                                            <p class="custom-price"><?php echo $customer_data[$i]["price"]; ?></p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div style="height: 5rem">
@@ -124,12 +128,16 @@ $db_handle = new DBController();
                                     <h5 class="product-title custom-product-title"><a
                                                 href="details.php?id=<?php echo $customer_data[$i]['id'];?>"><?php echo $customer_data[$i]["name"]; ?></a></h5>
                                     <p class="custom-content">
-                                        <?php
-                                        $description = $customer_data[$i]["description"];
-                                        $limited_description = (strlen($description) > 300) ? substr($description, 0, 300) . '...' : $description;
-                                        echo $limited_description;
-                                        ?>
+                                        <?php echo $customer_data[$i]["description"]; ?>
                                     </p>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <p class="custom-area"><?php echo $customer_data[$i]["area"]; ?></p>
+                                        </div>
+                                        <div class="col-6 text-right">
+                                            <p class="custom-price"><?php echo $customer_data[$i]["price"]; ?></p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div style="height: 5rem">
@@ -174,12 +182,16 @@ $db_handle = new DBController();
                                     <h5 class="product-title custom-product-title"><a
                                                 href="details.php?id=<?php echo $customer_data[$i]['id'];?>"><?php echo $customer_data[$i]["name"]; ?></a></h5>
                                     <p class="custom-content">
-                                        <?php
-                                        $description = $customer_data[$i]["description"];
-                                        $limited_description = (strlen($description) > 300) ? substr($description, 0, 300) . '...' : $description;
-                                        echo $limited_description;
-                                        ?>
+                                        <?php echo $customer_data[$i]["description"]; ?>
                                     </p>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <p class="custom-area"><?php echo $customer_data[$i]["area"]; ?></p>
+                                        </div>
+                                        <div class="col-6 text-right">
+                                            <p class="custom-price"><?php echo $customer_data[$i]["price"]; ?></p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div style="height: 5rem">

@@ -20,7 +20,7 @@
             <div class="col-lg-4  d-lg-flex justify-content-end">
                 <ul class="secondary-navbar">
                     <li><a href="#">店舖電話</a></li>
-                    <li><a href="#"><i class="fa-solid fa-phone"></i> 29442266</a></li>
+                    <li><a href="#"><i class="fa-solid fa-phone"></i> 3425 4563</a></li>
                 </ul>
             </div>
         </div>
@@ -68,8 +68,8 @@
                                                                                                    href="#"
                                                                                                    id="navbarDropdownMenuLinkShop">田土廳成交</a><a
                                     class="dropdown-item" href="https://www.gov.hk/tc/residents/taxes/stamp/stamp_duty_rates.htm">印花稅表(計算器)
-                            </a><a class="dropdown-item" href="#">銀行估價</a><a
-                                    class="dropdown-item" href="#">按揭計算機</a></div>
+                            </a><a class="dropdown-item" href="https://www.hsbc.com.hk/zh-hk/mortgages/tools/property-valuation/">銀行估價</a><a
+                                    class="dropdown-item" href="https://www.hsbc.com.hk/zh-hk/mortgages/repayment-calculator/">按揭計算機</a></div>
                     </li>
                     <li class="nav-item"><a class="nav-link"
                                             href="contact.php"
