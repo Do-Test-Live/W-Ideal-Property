@@ -72,7 +72,7 @@ if(isset($_POST['contact_submit'])){
         </div>
         <div class="col-lg-6 mb-40px">
             <h2 class="mb-15px">Get in touch with Us</h2>
-            <p>地址: 香港新界元朗青山公路元朗段177號 2樓</p>
+            <p>地址: 香港新界元朗青山公路元朗段177號 3樓</p>
             <p>電話: 3425 4563</p>
             <p>電郵: info@idealproperty.hk</p>
             <form method="post" action="#" class="mt-3">

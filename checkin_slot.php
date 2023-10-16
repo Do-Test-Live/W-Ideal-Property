@@ -57,9 +57,9 @@ $db_handle = new DBController();
     </div>
 </div>
 
-<div class="container ">
+<div class="container">
 
-    <div class="row blog-post ">
+    <div class="row blog-post">
         <?php
         $fetch_blog = $db_handle->runQuery("select * from blog where category_id = '3'");
         $no_fetch_blog = $db_handle->numRows("select * from blog where category_id = '3'");

@@ -2993,7 +2993,17 @@ body.has-no-comments .comment-respond {
 }
 
 .bg-img-1 {
-    background-image: url(../images/bg1.jpg)
+    background-image: url(../images/service.png);
+    height: 309px;
+}
+.bg-img-3, .bg-img-feature-1 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top
+}
+.bg-img-3{
+    background-image: url(../images/about.png);
+    height: 309px;
 }
 
 .bg-img-2 {
@@ -3001,6 +3011,28 @@ body.has-no-comments .comment-respond {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top
+}
+
+@media screen and (max-width: 992px) {
+    .bg-img-1, .bg-img-feature-1 {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top
+    }
+
+    .bg-img-1 {
+        background-image: url(../images/service.png);
+        height: 186px;
+    }
+    .bg-img-3, .bg-img-feature-1 {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top
+    }
+    .bg-img-3{
+        background-image: url(../images/about.png);
+        height: 186px;
+    }
 }
 
 .m-0 {
