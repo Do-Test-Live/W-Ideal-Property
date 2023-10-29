@@ -2993,17 +2993,7 @@ body.has-no-comments .comment-respond {
 }
 
 .bg-img-1 {
-    background-image: url(../images/service.png);
-    height: 309px;
-}
-.bg-img-3, .bg-img-feature-1 {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top
-}
-.bg-img-3{
-    background-image: url(../images/about.png);
-    height: 309px;
+    background-image: url(../images/bg1.jpg)
 }
 
 .bg-img-2 {
@@ -3011,28 +3001,6 @@ body.has-no-comments .comment-respond {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top
-}
-
-@media screen and (max-width: 992px) {
-    .bg-img-1, .bg-img-feature-1 {
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top
-    }
-
-    .bg-img-1 {
-        background-image: url(../images/service.png);
-        height: 186px;
-    }
-    .bg-img-3, .bg-img-feature-1 {
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top
-    }
-    .bg-img-3{
-        background-image: url(../images/about.png);
-        height: 186px;
-    }
 }
 
 .m-0 {
@@ -11760,54 +11728,4 @@ footer img {
     height: 60px;
     border-radius: 50%;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-}
-.faq-container {
-    width: 600px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.faq-item {
-    padding: 20px;
-    border-bottom: 1px solid #e0e0e0;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.faq-item:last-child {
-    border-bottom: none;
-}
-
-.faq-question {
-    font-size: 18px;
-    font-weight: 700;
-    padding-bottom: 3px;
-    patting-top: 3px;
-}
-
-.faq-answer {
-    font-size: 16px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-in-out;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.faq-answer.active {
-    border-bottom: 1px solid #e0e0e0;
-}
-
-.icon-container i {
-    font-size: 16px;
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out;
-}
-
-.icon-container i.active {
-    transform: rotate(90deg);
 }
