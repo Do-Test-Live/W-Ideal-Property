@@ -47,11 +47,10 @@ $db_handle = new DBController();
 
 <?php include('include/menu.php'); ?>
 
-<div class="page-main-title-2 mt-60px mb-60px mx-20px mx-lg-60px bg-img-1">
-    <div class="container">
-        <div class="row text-center">
-            <div class="col-md-8 offset-md-2 text-center text-center all-text-content-white">
-            </div>
+<div class="container mt-5 mb-5">
+    <div class="row">
+        <div class="col-12">
+            <img src="images/feature/about.png" class="img-fluid" alt=""/>
         </div>
     </div>
 </div>
@@ -62,9 +61,12 @@ $db_handle = new DBController();
             <h4 class="text-grey font-weight-bold" style="color: #f57103; font-size: 35px;">關於我們</h4>
         </div>
         <div class="col-12">
-            <p>村屋常見於新界，普遍樓高不過三層，每層不過700呎，間隔四正，非常實用。村屋呎價較私人屋苑低，帶旺了周遭，小巴班次相應加密。這裡環境清幽，遠離繁囂，適合有大有細或有毛孩作伴的家庭</p>
-            <p>理想村屋有限公司位元朗市中心, 專門經營元朗, 屯門, 天水圍, 洪水橋, 錦上路, 錦田, 大棠, 朗屏等地區村屋別墅土地租賃及買賣達10多年豐富經驗。</p>
-            <p>我們代理豐富經驗及良好專業服務態度, 一直深受客戶讚許。我們承諾秉承公司以往精神, 誠意用心的專業態度, 為各客戶尋找心目中的「理想村屋」。</p>
+            <p>
+                村屋常見於新界，普遍樓高不過三層，每層不過700呎，間隔四正，非常實用。村屋呎價較私人屋苑低，帶旺了周遭，小巴班次相應加密。這裡環境清幽，遠離繁囂，適合有大有細或有毛孩作伴的家庭</p>
+            <p>理想村屋有限公司位元朗市中心, 專門經營元朗, 屯門, 天水圍, 洪水橋, 錦上路, 錦田, 大棠,
+                朗屏等地區村屋別墅土地租賃及買賣達10多年豐富經驗。</p>
+            <p>我們代理豐富經驗及良好專業服務態度, 一直深受客戶讚許。我們承諾秉承公司以往精神, 誠意用心的專業態度,
+                為各客戶尋找心目中的「理想村屋」。</p>
         </div>
     </div>
 </div>

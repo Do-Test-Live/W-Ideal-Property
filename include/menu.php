@@ -5,7 +5,7 @@
                 <div class="navbar-modules d-none d-lg-flex justify-content-start">
                     <div class="navbar-module"><a href="#"><i class="fab fa-instagram"></i></a></div>
                     <div class="navbar-module"><a href="#"><i class="fab fa-youtube"></i></a></div>
-                    <div class="navbar-module"><a href="https://wa.me/69278453" target="_blank"><i
+                    <div class="navbar-module"><a href="https://wa.me/94491954" target="_blank"><i
                                     class="fab fa-whatsapp"></i></a></div>
                 </div>
             </div>
@@ -75,8 +75,7 @@
                                             href="contact.php"
                         >聯絡我們 </a>
                     </li>
-                    <li class="nav-item dropdown mega_menu_holder"><a class="nav-link" data-toggle="dropdown"
-                                                                      href="#">常見問題</a>
+                    <li class="nav-item"><a class="nav-link" href="faq.php">常見問題</a>
                     </li>
 
                 </ul>

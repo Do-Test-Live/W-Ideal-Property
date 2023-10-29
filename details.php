@@ -50,28 +50,32 @@ $fetch_blog_detail = $db_handle->runQuery("select * from slider where id = '$id'
 
 <?php include('include/menu.php'); ?>
 
-<div class="container-fluid px-20px px-md-60px mt-60px mb-lg-35px">
-    <div class="row align-items-center">
-        <div class="col-lg-6">
-            <div class="entry-media"><img src="<?php echo $fetch_blog_detail[0]['image'];?>" alt="Card image cap"></div>
+
+<div class="container mt-3 mb-lg-5px">
+    <div class="row">
+        <div class="col-lg-12 pb-3">
+            <h1 class="single-post-entry-title entry-title text-center"><?php echo $fetch_blog_detail[0]['name'];?></h1>
         </div>
-        <div class="col-lg-6 pt-40px pb-lg-30px">
-            <h1 class="single-post-entry-title entry-title"><?php echo $fetch_blog_detail[0]['name'];?></h1>
+        <div class="col-lg-12 d-flex justify-content-center align-items-center">
+            <div class="entry-media"><img src="<?php echo $fetch_blog_detail[0]['image'];?>" alt="Card image cap" style="max-height: 500px; width: auto;"></div>
         </div>
     </div>
 </div>
 <div class="container">
     <div class="row">
-        <div class="col-lg-8 offset-lg-2">
+        <div class="col-lg-12">
             <div class="blog-post single-post">
                 <article>
                     <div class="entry-content-wrapper">
                         <div class="entry-content">
+                        <?php if($fetch_blog_detail[0]['section_name']=="精選村屋推介"||$fetch_blog_detail[0]['section_name']=="獨家村屋推介"){  ?>
                             <blockquote>
                                 <p>Area: <?php echo $fetch_blog_detail[0]['area'];?></p>
                                 <cite>Price — <?php echo $fetch_blog_detail[0]['price'];?>HKD</cite>
                             </blockquote>
+                            <?php } ?>
                             <p><?php echo $fetch_blog_detail[0]['description'];?></p>
+
                         </div>
                     </div>
                 </article>

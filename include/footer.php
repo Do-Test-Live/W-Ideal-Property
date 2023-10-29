@@ -9,13 +9,13 @@
                     <p>讓你體驗一個不一樣的村屋代理 </br>
                         讓你輕輕鬆鬆掌握村屋置業機會 </p>
                     <div class="hr"></div>
-                    <h6>香港新界元朗青山公路元朗段177號 3樓</h6>
-                    <h6>29442266</h6>
+                    <h6>香港新界元朗青山公路元朗段177號 2樓</h6>
+                    <h6>3425 4563</h6>
                     <div class="contact-social">
                         <ul>
                             <li><a class="hover-target" href=""><i class="fab fa-instagram"></i></a></li>
                             <li><a class="hover-target" href=""><i class="fab fa-youtube"></i></a></li>
-                            <li><a class="hover-target" href="https://wa.me/69278453" target="_blank"><i
+                            <li><a class="hover-target" href="https://wa.me/94491954" target="_blank"><i
                                         class="fab fa-whatsapp"></i></a></li>
                         </ul>
                     </div>

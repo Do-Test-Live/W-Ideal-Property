@@ -47,12 +47,10 @@ $db_handle = new DBController();
 
 <?php include('include/menu.php'); ?>
 
-<div class="page-main-title-2 mt-60px mb-60px mx-20px mx-lg-60px bg-img-1">
-    <div class="container">
-        <div class="row text-center">
-            <div class="col-md-8 offset-md-2 text-center text-center all-text-content-white">
-                <h2 class="entry-title"></h2>
-            </div>
+<div class="container mt-5 mb-5">
+    <div class="row">
+        <div class="col-12">
+            <img src="images/feature/service.png" class="img-fluid" alt=""/>
         </div>
     </div>
 </div>
