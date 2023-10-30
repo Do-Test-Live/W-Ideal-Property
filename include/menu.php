@@ -65,7 +65,7 @@
                                                      class="nav-link dropdown-toggle" data-toggle="dropdown"
                                                      href="#">有用資料</a>
                         <div aria-labelledby="navbarDropdownMenuLinkShop" class="dropdown-menu"><a class="dropdown-item"
-                                                                                                   href="#"
+                                                                                                   href="tiantu.php"
                                                                                                    id="navbarDropdownMenuLinkShop">田土廳成交</a><a
                                     class="dropdown-item" href="https://www.gov.hk/tc/residents/taxes/stamp/stamp_duty_rates.htm">印花稅表(計算器)
                             </a><a class="dropdown-item" href="https://www.hsbc.com.hk/zh-hk/mortgages/tools/property-valuation/">銀行估價</a><a

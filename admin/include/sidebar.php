@@ -43,6 +43,20 @@
     </li>
 
     <li class="nav-item">
+        <a class="nav-link" href="addtiantu.php">
+            <i class="fas fa-fw fa-cog"></i>
+            <span>Add 田土廳成交</span>
+        </a>
+    </li>
+    <!-- Nav Item - Pages Collapse Menu -->
+    <li class="nav-item">
+        <a class="nav-link" href="tiantu.php">
+            <i class="fas fa-fw fa-cog"></i>
+            <span>田土廳成交</span>
+        </a>
+    </li>
+
+    <li class="nav-item">
         <a class="nav-link" href="addblog.php">
             <i class="fas fa-fw fa-blog"></i>
             <span>Add Blog</span>
